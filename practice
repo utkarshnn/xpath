@@ -1,0 +1,97 @@
+quote = response.css(".pro_name")[0]
+main = quote.css(".prod_name > div:nth-child(1) > h1:nth-child(1)").extract_first()
+model = quote.css(".prod_name > div:nth-child(1) > span:nth-child(7)").extract_first()
+item = quote.css(".prod_name > div:nth-child(1) > span:nth-child(10)").extract_first()
+prodetail1 = quote.css(".product_detail_height > ul:nth-child(2) > li:nth-child(1)").extract_first()
+prodetail2 = quote.css("div.Row:nth-child(1) > div:nth-child(2)").extract_first()
+prodetail3 = quote.css("div.Row:nth-child(1) > div:nth-child(4)").extract_first()
+
+
+spec1 = quote.css(".product_detail_height > ul:nth-child(2)").extract_first()
+spec2 = quote.css("#spec_attributes").extract_first()
+spec3 = quote.css("div.Row:nth-child(1)").extract_first()
+
+
+que = response.css("#spec_attributes")[0]
+spec4 = quote.css("div.Row:nth-child(1) > div:nth-child(2)").extract_first()
+spec5 = quote.css("div.Row:nth-child(1) > div:nth-child(4)").extract_first()
+spec6 = quote.css("div.Row:nth-child(1) > div:nth-child(6)").extract_first()
+spec7 = quote.css("div.Row:nth-child(1) > div:nth-child(8)").extract_first()
+spec7 = quote.css("div.Row:nth-child(1) > div:nth-child(10)").extract_first()
+spec7 = quote.css("div.Row:nth-child(1) > div:nth-child(12)").extract_first()
+
+
+quote = response.css(".prod_name")
+
+
+main = quote.css(".prod_name > div:nth-child(1) > span:nth-child(4) > a:nth-child(1)").extract_first()
+model = quote.css(".prod_name > div:nth-child(1) > span:nth-child(7)").extract_first()
+spec1 = quote.css("div.ship_tbl_bk:nth-child(1) > div:nth-child(2)").extract_first()
+spec2 = quote.css("div.ship_tbl_bk:nth-child(2) > div:nth-child(2)").extract_first()
+spec3 = quote.css("div.ship_tbl_bk:nth-child(3) > div:nth-child(2)").extract_first()
+spec4 = quote.css("div.ship_tbl_bk:nth-child(4) > div:nth-child(2)").extract_first()
+spec5 = quote.css("div.ship_tbl_bk:nth-child(5) > div:nth-child(2)").extract_first()
+spec6 = quote.css("div.ship_tbl_bk:nth-child(6) > div:nth-child(2)").extract_first()
+
+
+quote = response.xpath("html/body/div[3]/div/div/div[3]")
+
+image = quote.xpath(//*[@id="image"]]").extract()
+
+quote = response.xpath("//div[@class='product-essential']")
+ image = quote.xpath("//img[@src='https://d3tjg5qtt72ce1.cloudfront.net/media/catalog/product/cache/1/small_image/50x/9df78eab33525d08d6e5fb8d27136e95/placeholder/default/NOTAVAIL_1.png']").extract()
+
+
+
+quote = response.css("#maincontent")
+>>> main = quote.css(".sidebar > div:nth-child(1) > h1:nth-child(1)").extract_first()
+main = quote.css(".toolbar > span:nth-child(1)").extract_first()
+
+
+quote = response.css(".brandList")
+main = quote.css(".brandlist_ul").extract_first()
+main = quote.css(".toolbar > span:nth-child(1)").extract_first()
+#category_view > ul:nth-child(5) > li:nth-child(2) > div:nth-child(1)
+
+
+.brandlist_ul > li:nth-child(1)
+.brandlist_ul > li:nth-child(2)
+
+.Table1 div.Row1:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+div.Row1:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+div.Row1:nth-child(1) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+div.Row1:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+div.Row1:nth-child(3) > div:nth-child(3) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+div.Row1:nth-child(3) > div:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+
+
+spec1 = quote.xpath("//span[@style='font-weight: bold;']").extract_first()
+
+
+
+quote = response.xpath("//div[@class='col-md-12']")
+main = quote.xpath("//p[@class='price col-xs-12 col-sm-5']").extract_first()
+main = quote.xpath("//dl[@class='clearfix']]").extract_first()
+main = quote.xpath("//span[@class='info']").extract_first()
+main = quote.xpath("//a[contains(.,'See Datasheet')]").extract_first()
+main = quote.xpath("//div[@class='slide col-xs-12']").extract_first()
+main = quote.xpath("//a[@href='#']").extract_first()
+
+
+
+quote = response.xpath("//div[@class='column main']")
+main = quote.xpath("//div[@class='container clearfix']").extract_first()
+main = quote.xpath("//div[@class='product_detailslist clearfix']").extract()
+
+main = quote.xpath("//div[@class='category_product clearfix']//text()").extract()
+main = quote.xpath("//div[@class='category_product clearfix']//text()").extract()
+main = quote.xpath("//div[@class='category_product clearfix']//text()").extract()
+main = quote.xpath("//div[@class='category_product clearfix']//text()").extract()
+main = quote.xpath("//div[@class='category_product clearfix']//text()").extract()
+main = quote.xpath("//div[@class='category_product clearfix']//text()").extract()
+
+
+
+ssh -i raptorstaging.pem  ec2-user@dev.raptorsupplies.com 
+
+
